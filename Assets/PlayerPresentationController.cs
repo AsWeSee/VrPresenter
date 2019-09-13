@@ -8,19 +8,19 @@ using UnityEngine.UI;
 
 public class PlayerPresentationController : MonoBehaviour
 {
-    
 //    public List<Sprite> sprites;
 //    public Image screen;
 //    public SpriteRenderer screen2;
-    
+
     public List<Texture2D> slides;
     public RawImage rawScreen;
     public int currentSlide = 0;
 
     public AudioSource applauseSound;
-    
-    private const string folder = @"C:\UnityProjects\VrPresenter\Assets\Resources\Presentation\2\";
-    
+
+    private const string folder = @"C:\UnityProjects\VrPresenter\Assets\Resources\Presentation\1\";
+    private string[] wildcards = {"*.jpg", "*.jepg", "*.png"};
+
     void Start()
     {
         applauseSound.Play();
@@ -30,15 +30,17 @@ public class PlayerPresentationController : MonoBehaviour
     void loadSlides()
     {
 //        sprites = new List<Sprite>();
+//        sprites.AddRange(Resources.LoadAll<Sprite>("Presentation/2/"));
+
         slides = new List<Texture2D>();
         Debug.Log("GetCurrentDirectory " + Directory.GetCurrentDirectory());
-        
+
         //TODO: рендерить pdf в png т.к. презентации в pdf встречаются намного чаще чем в png
-        foreach (string file in Directory.EnumerateFiles(folder, "*.png"))
-        {
-            slides.Add(LoadImage(file));
-        }
-//        sprites.AddRange(Resources.LoadAll<Sprite>("Presentation/2/"));
+        foreach (string wildcard in wildcards)
+            foreach (string file in Directory.EnumerateFiles(folder, wildcard))
+                slides.Add(LoadImage(file));
+
+
         currentSlide = 0;
         updateSlide();
     }
@@ -46,7 +48,7 @@ public class PlayerPresentationController : MonoBehaviour
     Texture2D LoadImage(string filename)
     {
         byte[] byteArray = File.ReadAllBytes(filename);
-        Texture2D sampleTexture = new Texture2D(2,2);
+        Texture2D sampleTexture = new Texture2D(2, 2);
         bool isLoaded = sampleTexture.LoadImage(byteArray);
         return isLoaded ? sampleTexture : null;
     }
@@ -57,16 +59,16 @@ public class PlayerPresentationController : MonoBehaviour
         if (currentSlide >= slides.Count)
             currentSlide = slides.Count - 1;
 //            currentSlide = 0; //Как альтернатива, вернуться на первый слайд
-        
+
 //        Если мы попытались пойти назад на первом слайде, то слайд не меняется.
         if (currentSlide < 0)
             currentSlide = 0;
 //            currentSlide = sprites.Length - 1; //либо загружаем последний слайд
-        
-        
+
+
 //        screen.sprite = sprites[currentSlide];
 //        screen2.sprite = sprites[currentSlide];
-        
+
         //подгон текстуры по ширине, чтобы были всегда правильные пропорции и одинаковая высота
         Texture2D curSlideTexture = slides[currentSlide];
         if (curSlideTexture != null)
@@ -74,10 +76,9 @@ public class PlayerPresentationController : MonoBehaviour
             float d = (float) curSlideTexture.width / (float) curSlideTexture.height;
             Vector3 newScale = rawScreen.transform.localScale;
             newScale.x = newScale.y * d;
-            rawScreen.transform.localScale = newScale; 
+            rawScreen.transform.localScale = newScale;
             rawScreen.texture = slides[currentSlide];
         }
-
     }
 
     private void Update()
@@ -88,18 +89,19 @@ public class PlayerPresentationController : MonoBehaviour
             currentSlide += 1;
             updateSlide();
         }
+
         if (OVRInput.GetDown(OVRInput.Button.Three))
         {
             currentSlide -= 1;
             updateSlide();
         }
-        
+
         //Возврат к началу презентации и обновление слайдов из папки
         if (OVRInput.GetDown(OVRInput.Button.Two))
         {
             loadSlides();
         }
-        
+
         //Проигрывание аплодисментов
         if (OVRInput.GetDown(OVRInput.Button.One))
         {
