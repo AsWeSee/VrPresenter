@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b84e7a4-be35-48ca-ab82-b2231b4c7888" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VrPresenter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VrPresenter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VrPresenter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VrPresenter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerPresentationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerPresentationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -438,22 +441,18 @@
       <file leaf-file-name="PlayerPresentationController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/PlayerPresentationController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+            <state relative-caret-position="-8">
+              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
               <folding>
-                <marker date="1568333594211" expanded="false" signature="6:96" ph="..." />
-                <marker date="1568333594211" expanded="true" signature="155:1087" ph="{...}" />
-                <marker date="1568333594211" expanded="true" signature="227:248" ph="{...}" />
-                <marker date="1568333594211" expanded="true" signature="306:1085" ph="{...}" />
-                <marker date="1568333594211" expanded="true" signature="363:396" ph="{...}" />
-                <marker date="1568333594211" expanded="true" signature="447:480" ph="{...}" />
-                <marker date="1568333594211" expanded="true" signature="533:566" ph="{...}" />
-                <marker date="1568333594211" expanded="true" signature="618:651" ph="{...}" />
-                <marker date="1568333594211" expanded="true" signature="703:736" ph="{...}" />
-                <marker date="1568333594211" expanded="true" signature="789:822" ph="{...}" />
-                <marker date="1568333594211" expanded="true" signature="872:905" ph="{...}" />
-                <marker date="1568333594211" expanded="true" signature="957:990" ph="{...}" />
-                <marker date="1568333594211" expanded="true" signature="1046:1079" ph="{...}" />
+                <marker date="1568341612672" expanded="true" signature="6:118" ph="..." />
+                <marker date="1568341612672" expanded="true" signature="323:357" ph="{...}" />
+                <marker date="1568341612672" expanded="true" signature="380:907" ph="{...}" />
+                <marker date="1568341612672" expanded="true" signature="1098:1265" ph="/* currentSlide = 0; //Как альтернатива, вернуться на первый слайд ... */" />
+                <marker date="1568341612672" expanded="true" signature="1584:2208" ph="{...}" />
+                <marker date="1568341612672" expanded="true" signature="1688:1766" ph="{...}" />
+                <marker date="1568341612672" expanded="true" signature="1819:1897" ph="{...}" />
+                <marker date="1568341612672" expanded="true" signature="2026:2072" ph="{...}" />
+                <marker date="1568341612672" expanded="true" signature="2169:2202" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -484,8 +483,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="321" />
-    <option name="y" value="-8" />
+    <option name="x" value="1912" />
+    <option name="y" value="48" />
     <option name="width" value="1280" />
     <option name="height" value="1000" />
   </component>
@@ -530,9 +529,9 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="15248">
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="15248" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -546,12 +545,12 @@
       <option name="presentableId" value="Default" />
       <updated>1568331190291</updated>
       <workItem from="1568331193023" duration="1228000" />
-      <workItem from="1568333391415" duration="319000" />
+      <workItem from="1568333391415" duration="4980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1547000" />
+    <option name="totallyTimeSpent" value="6208000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -563,7 +562,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1912" y="48" width="1296" height="1040" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -574,12 +573,12 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2540453" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39977852" />
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -597,6 +596,52 @@
   <component name="UnityProjectConfiguration" isUnityUI="true" />
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/PlayerPresentationController.cs</url>
+          <line>55</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/PlayerPresentationController.cs" initialLine="55">
+            <startOffsets>
+              <startOffset value="1711" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="1729" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/PlayerPresentationController.cs</url>
+          <line>60</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/PlayerPresentationController.cs" initialLine="60">
+            <startOffsets>
+              <startOffset value="1842" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="1860" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/PlayerPresentationController.cs</url>
+          <line>67</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/PlayerPresentationController.cs" initialLine="67">
+            <startOffsets>
+              <startOffset value="2049" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="2062" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Oculus/VR/Scripts/Util/OVRPlayerController.cs">
@@ -1021,19 +1066,15 @@
         <state relative-caret-position="270">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <marker date="1568333594211" expanded="false" signature="6:96" ph="..." />
-            <marker date="1568333594211" expanded="true" signature="155:1087" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="227:248" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="306:1085" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="363:396" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="447:480" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="533:566" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="618:651" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="703:736" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="789:822" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="872:905" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="957:990" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="1046:1079" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="6:118" ph="..." />
+            <marker date="1568341612672" expanded="true" signature="323:357" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="380:907" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="1098:1265" ph="/* currentSlide = 0; //Как альтернатива, вернуться на первый слайд ... */" />
+            <marker date="1568341612672" expanded="true" signature="1584:2208" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="1688:1766" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="1819:1897" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="2026:2072" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="2169:2202" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1457,22 +1498,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/PlayerPresentationController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        <state relative-caret-position="-8">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
           <folding>
-            <marker date="1568333594211" expanded="false" signature="6:96" ph="..." />
-            <marker date="1568333594211" expanded="true" signature="155:1087" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="227:248" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="306:1085" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="363:396" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="447:480" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="533:566" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="618:651" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="703:736" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="789:822" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="872:905" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="957:990" ph="{...}" />
-            <marker date="1568333594211" expanded="true" signature="1046:1079" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="6:118" ph="..." />
+            <marker date="1568341612672" expanded="true" signature="323:357" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="380:907" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="1098:1265" ph="/* currentSlide = 0; //Как альтернатива, вернуться на первый слайд ... */" />
+            <marker date="1568341612672" expanded="true" signature="1584:2208" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="1688:1766" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="1819:1897" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="2026:2072" ph="{...}" />
+            <marker date="1568341612672" expanded="true" signature="2169:2202" ph="{...}" />
           </folding>
         </state>
       </provider>
