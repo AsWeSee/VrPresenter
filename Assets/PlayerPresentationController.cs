@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using OVR.OpenVR;
@@ -7,68 +8,71 @@ using UnityEngine.UI;
 
 public class PlayerPresentationController : MonoBehaviour
 {
-    public Sprite[] sprites;
-    public Image screen;
-    public SpriteRenderer screen2;
+    
+//    public List<Sprite> sprites;
+//    public Image screen;
+//    public SpriteRenderer screen2;
+    
+    public List<Texture2D> slides;
+    public RawImage rawScreen;
     public int currentSlide = 0;
+
+    public AudioSource applauseSound;
+    
+    private const string folder = @"C:\UnityProjects\VrPresenter\Assets\Resources\Presentation\2\";
     
     void Start()
     {
+        applauseSound.Play();
         loadSlides();
+        
     }
 
     void loadSlides()
     {
-        currentSlide = 0;
-        //TODO: брать все файлы из конкретной папки
-        sprites = new Sprite[5];
-        //TODO: рассмотреть возможность загрузки pdf
-        sprites[0] = Resources.Load<Sprite>("Presentation/2/0");
-        sprites[1] = Resources.Load<Sprite>("Presentation/2/1");
-        sprites[2] = Resources.Load<Sprite>("Presentation/2/2");
-        sprites[3] = Resources.Load<Sprite>("Presentation/2/3");
-        sprites[4] = Resources.Load<Sprite>("Presentation/2/4");
+//        sprites = new List<Sprite>();
+        slides = new List<Texture2D>();
+        Debug.Log("GetCurrentDirectory " + Directory.GetCurrentDirectory());
         
+        //TODO: рендерить pdf в png т.к. презентации в pdf встречаются намного чаще чем в png
+        foreach (string file in Directory.EnumerateFiles(folder, "*.png"))
+        {
+            slides.Add(LoadImage(file));
+        }
+//        sprites.AddRange(Resources.LoadAll<Sprite>("Presentation/2/"));
+        currentSlide = 0;
         updateSlide();
     }
 
-//    void LoadImage(string filename)
-//    {
-//        // read image and store in a byte array
-//        string folder = @"C:\UnityProjects\VrPresenter\Assets\Resources\Presentation\2";
-//        byte[] byteArray = File.ReadAllBytes(folder + @"\" + filename + ".png");
-//        //create a texture and load byte array to it
-//        // Texture size does not matter 
-//        Texture2D sampleTexture = new Texture2D(2,2);
-//        // the size of the texture will be replaced by image size
-//        bool isLoaded = sampleTexture.LoadImage(byteArray);
-//        // apply this texure as per requirement on image or material
-//        GameObject image = GameObject.Find("RawImage");
-//        if (isLoaded)
-//        {
-//            image.GetComponent<RawImage>().texture = sampleTexture;
-//        }
-//    }
+    Texture2D LoadImage(string filename)
+    {
+        byte[] byteArray = File.ReadAllBytes(filename);
+        Texture2D sampleTexture = new Texture2D(2,2);
+        bool isLoaded = sampleTexture.LoadImage(byteArray);
+        return isLoaded ? sampleTexture : null;
+    }
 
     void updateSlide()
     {
-        //Если пошли дальше размера презентации, то остаемся в конце
-        if (currentSlide >= sprites.Length)
-            currentSlide = sprites.Length - 1;
+//        Если пошли дальше размера презентации, то остаемся в конце
+        if (currentSlide >= slides.Count)
+            currentSlide = slides.Count - 1;
 //            currentSlide = 0; //Как альтернатива, вернуться на первый слайд
         
-        //Если мы попытались пойти назад на первом слайде, то слайд не меняется.
+//        Если мы попытались пойти назад на первом слайде, то слайд не меняется.
         if (currentSlide < 0)
             currentSlide = 0;
 //            currentSlide = sprites.Length - 1; //либо загружаем последний слайд
         
         
-        screen.sprite = sprites[currentSlide];
-        screen2.sprite = sprites[currentSlide];
+//        screen.sprite = sprites[currentSlide];
+//        screen2.sprite = sprites[currentSlide];
+        if (slides[currentSlide] != null)
+            rawScreen.texture = slides[currentSlide];
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         //Переключение слайдов вперёд и назад
         if (OVRInput.GetDown(OVRInput.Button.Four))
@@ -91,7 +95,7 @@ public class PlayerPresentationController : MonoBehaviour
         //Проигрывание аплодисментов
         if (OVRInput.GetDown(OVRInput.Button.One))
         {
-            
+            applauseSound.Play();
         }
     }
 }
