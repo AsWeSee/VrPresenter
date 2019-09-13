@@ -25,7 +25,6 @@ public class PlayerPresentationController : MonoBehaviour
     {
         applauseSound.Play();
         loadSlides();
-        
     }
 
     void loadSlides()
@@ -67,8 +66,17 @@ public class PlayerPresentationController : MonoBehaviour
         
 //        screen.sprite = sprites[currentSlide];
 //        screen2.sprite = sprites[currentSlide];
-        if (slides[currentSlide] != null)
+        
+        //подгон текстуры по ширине, чтобы были всегда правильные пропорции и одинаковая высота
+        Texture2D curSlideTexture = slides[currentSlide];
+        if (curSlideTexture != null)
+        {
+            float d = (float) curSlideTexture.width / (float) curSlideTexture.height;
+            Vector3 newScale = rawScreen.transform.localScale;
+            newScale.x = newScale.y * d;
+            rawScreen.transform.localScale = newScale; 
             rawScreen.texture = slides[currentSlide];
+        }
 
     }
 
