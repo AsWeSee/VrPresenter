@@ -117,20 +117,23 @@
       <file leaf-file-name="PlayerPresentationController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/PlayerPresentationController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+            <state relative-caret-position="-758">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               <folding>
-                <marker date="1568348148471" expanded="true" signature="6:135" ph="..." />
-                <marker date="1568348148471" expanded="true" signature="194:3043" ph="{...}" />
-                <marker date="1568348148471" expanded="true" signature="340:374" ph="{...}" />
-                <marker date="1568348148471" expanded="true" signature="397:930" ph="{...}" />
-                <marker date="1568348148471" expanded="true" signature="932:1740" ph="/* void LoadImage(string filename) ... */" />
-                <marker date="1568348148471" expanded="true" signature="1931:2098" ph="/* currentSlide = 0; //Как альтернатива, вернуться на первый слайд ... */" />
-                <marker date="1568348148471" expanded="true" signature="2417:3041" ph="{...}" />
-                <marker date="1568348148471" expanded="true" signature="2521:2599" ph="{...}" />
-                <marker date="1568348148471" expanded="true" signature="2652:2730" ph="{...}" />
-                <marker date="1568348148471" expanded="true" signature="2859:2905" ph="{...}" />
-                <marker date="1568348148471" expanded="true" signature="3002:3035" ph="{...}" />
+                <marker date="1568357557002" expanded="true" signature="6:149" ph="..." />
+                <marker date="1568357557002" expanded="true" signature="208:2774" ph="{...}" />
+                <marker date="1568357557002" expanded="true" signature="216:314" ph="/* public List&lt;Sprite&gt; sprites; ... */" />
+                <marker date="1568357557002" expanded="true" signature="545:579" ph="{...}" />
+                <marker date="1568357557002" expanded="true" signature="943:1004" ph="{...}" />
+                <marker date="1568357557002" expanded="true" signature="1175:1405" ph="{...}" />
+                <marker date="1568357557002" expanded="true" signature="1429:2121" ph="{...}" />
+                <marker date="1568357557002" expanded="true" signature="1592:1759" ph="/* currentSlide = 0; //Как альтернатива, вернуться на первый слайд ... */" />
+                <marker date="1568357557002" expanded="true" signature="1920:2018" ph="/* screen.sprite = sprites[currentSlide]; ... */" />
+                <marker date="1568357557002" expanded="true" signature="2148:2772" ph="{...}" />
+                <marker date="1568357557002" expanded="true" signature="2252:2330" ph="{...}" />
+                <marker date="1568357557002" expanded="true" signature="2383:2461" ph="{...}" />
+                <marker date="1568357557002" expanded="true" signature="2590:2636" ph="{...}" />
+                <marker date="1568357557002" expanded="true" signature="2733:2766" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -223,12 +226,12 @@
       <option name="presentableId" value="Default" />
       <updated>1568331190291</updated>
       <workItem from="1568331193023" duration="1228000" />
-      <workItem from="1568333391415" duration="8944000" />
+      <workItem from="1568333391415" duration="15900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10172000" />
+    <option name="totallyTimeSpent" value="17128000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -277,7 +280,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -703,17 +706,20 @@
         <state relative-caret-position="270">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <marker date="1568348148471" expanded="true" signature="6:135" ph="..." />
-            <marker date="1568348148471" expanded="true" signature="194:3043" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="340:374" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="397:930" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="932:1740" ph="/* void LoadImage(string filename) ... */" />
-            <marker date="1568348148471" expanded="true" signature="1931:2098" ph="/* currentSlide = 0; //Как альтернатива, вернуться на первый слайд ... */" />
-            <marker date="1568348148471" expanded="true" signature="2417:3041" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="2521:2599" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="2652:2730" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="2859:2905" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="3002:3035" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="6:149" ph="..." />
+            <marker date="1568357557002" expanded="true" signature="208:2774" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="216:314" ph="/* public List&lt;Sprite&gt; sprites; ... */" />
+            <marker date="1568357557002" expanded="true" signature="545:579" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="943:1004" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="1175:1405" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="1429:2121" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="1592:1759" ph="/* currentSlide = 0; //Как альтернатива, вернуться на первый слайд ... */" />
+            <marker date="1568357557002" expanded="true" signature="1920:2018" ph="/* screen.sprite = sprites[currentSlide]; ... */" />
+            <marker date="1568357557002" expanded="true" signature="2148:2772" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="2252:2330" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="2383:2461" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="2590:2636" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="2733:2766" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1137,20 +1143,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/PlayerPresentationController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+        <state relative-caret-position="-758">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding>
-            <marker date="1568348148471" expanded="true" signature="6:135" ph="..." />
-            <marker date="1568348148471" expanded="true" signature="194:3043" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="340:374" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="397:930" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="932:1740" ph="/* void LoadImage(string filename) ... */" />
-            <marker date="1568348148471" expanded="true" signature="1931:2098" ph="/* currentSlide = 0; //Как альтернатива, вернуться на первый слайд ... */" />
-            <marker date="1568348148471" expanded="true" signature="2417:3041" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="2521:2599" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="2652:2730" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="2859:2905" ph="{...}" />
-            <marker date="1568348148471" expanded="true" signature="3002:3035" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="6:149" ph="..." />
+            <marker date="1568357557002" expanded="true" signature="208:2774" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="216:314" ph="/* public List&lt;Sprite&gt; sprites; ... */" />
+            <marker date="1568357557002" expanded="true" signature="545:579" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="943:1004" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="1175:1405" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="1429:2121" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="1592:1759" ph="/* currentSlide = 0; //Как альтернатива, вернуться на первый слайд ... */" />
+            <marker date="1568357557002" expanded="true" signature="1920:2018" ph="/* screen.sprite = sprites[currentSlide]; ... */" />
+            <marker date="1568357557002" expanded="true" signature="2148:2772" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="2252:2330" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="2383:2461" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="2590:2636" ph="{...}" />
+            <marker date="1568357557002" expanded="true" signature="2733:2766" ph="{...}" />
           </folding>
         </state>
       </provider>
